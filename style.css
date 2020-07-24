@@ -239,16 +239,18 @@
       padding-top: 33.33333%; }
 
 .ui-FeedTemplate_XII {
-  display: flex; }
+  display: flex;
+  margin-left: -0.625em;
+  margin-right: -0.625em; }
   .ui-FeedTemplate_XII .ui-FeedTemplate__Col1, .ui-FeedTemplate_XII .ui-FeedTemplate__Col2 {
     flex-shrink: 1;
     flex-grow: 0;
     min-width: 0;
     flex-basis: 50%; }
   .ui-FeedTemplate_XII .ui-FeedTemplate__Col1 {
-    padding-right: 0.625em; }
+    padding-right: 0.3125em; }
   .ui-FeedTemplate_XII .ui-FeedTemplate__Col2 {
-    padding-left: 0.625em; }
+    padding-left: 0.3125em; }
   .ui-FeedTemplate_XII .ui-Card_V .ui-Card__cover {
     padding-top: 75%; }
 
