@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Templates From feat.com</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        body {
+            margin: 0;
+            /* background-color: #bbbbbb; */
+        }
+
+        .example {
+            width: 400px;
+            padding: 20px;
+            background-color: #bbbbbb;
+            margin-right: 20px;
+        }
+
+        .container {
+            width: 1040px;
+            margin: 0 auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: white;
+            zoom: 1;
+            overflow: hidden;
+            margin-bottom: 36px;
+            border: 1px solid #eaeaea;
+        }
+
+        .section {
+            padding-bottom: 36px;
+        }
+
+        .desc {
+            position: fixed;
+            left: 12px;
+            transition: 0.3s ease;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            /* padding-left: 4px;
+          padding-right: 16px;
+          padding-bottom: 3px; */
+            color: #999999;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            padding: 4px;
+        }
+
+        .view-on-github {
+            position: fixed;
+            line-height: 60px;
+            right: 25px;
+            top: 0;
+            height: 60px;
+            z-index: 100;
+            color: #333;
+            text-decoration: none;
+            
+        }
+
+        .view-on-github:hover {
+            text-decoration: underline;
+        }
+
+        .icon-github {
+            width: 36px;
+            height: 36px;
+            padding: 4px;
+            box-sizing: border-box;
+            vertical-align: middle;
+            margin-right: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <a target="_blank" href="https://www.feat.com/dimzou" class="desc">
+        <img class="logo" src="./f.png" />
+        <!-- <span class="content">
+            Make the most of your talent.
+        </span> -->
+    </a>
+    <a target="_blank" href="https://github.com/feat/feed_template" class="view-on-github">
+        <svg class="case-item-icon icon-github" fill="#333" xmlns="http://www.w3.org/2000/svg" width="62" height="60"
+            viewBox="0 0 62 60">
+            <path
+                d="M31 0a30.7 30.7 0 0 0-9.8 59.9c1.55.3 2.116-.6 2.116-1.4s-.026-2.7-.042-5.3c-8.622 1.9-10.44-4.1-10.44-4.1-1.414-3.5-3.448-4.5-3.448-4.5-2.815-1.9.213-1.9.213-1.9a6.74 6.74 0 0 1 4.746 3.2c2.766 4.7 7.254 3.3 9.023 2.6a6.3 6.3 0 0 1 1.966-4.1c-6.88-.8-14.12-3.5-14.12-15.2a11.964 11.964 0 0 1 3.193-8.3 10.9 10.9 0 0 1 .3-8.1s2.6-.9 8.525 3.1a30.617 30.617 0 0 1 15.522 0c5.92-4 8.517-3.1 8.517-3.1a10.886 10.886 0 0 1 .308 8.1 11.946 11.946 0 0 1 3.186 8.3c0 11.8-7.248 14.4-14.155 15.1a7.52 7.52 0 0 1 2.1 5.7c0 4.1-.04 7.5-.04 8.5 0 .8.56 1.7 2.13 1.4A30.708 30.708 0 0 0 31 0">
+            </path>
+        </svg><span class="additional-info">View on GitHub</span></a>
+    <div class="container">
+        <h2>
+            卡片模板
+        </h2>
+        <div class="section">
+            <h3>模板一</h3>
+            <div style="display: flex;">
+                <div class="example">
+                    <div class="ui-Card ui-Card_I">
+                        <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                            <div class="ui-Card__cover"></div>
+                        </div>
+                        <div class="ui-Card__title ui-Card__title_jack">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="ui-Card__body ui-Card__body_jack">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem,
+                            ipsum dolor.
+                        </div>
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="ui-Card ui-Card_I">
+                        <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                            <div class="ui-Card__cover"></div>
+                        </div>
+                        <div class="ui-Card__title ui-Card__title_jack">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="ui-Card__body ui-Card__body_jack">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem,
+                            ipsum dolor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>模板二</h3>
+            <div style="display: flex;">
+                <div class="example">
+                    <div class="ui-Card ui-Card_II">
+                        <div class="ui-Card__title ui-Card__title_jack">
+                            Lorem ipsum dolor sit.
+                        </div>
+                        <div class="ui-Card__content">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                <div class="ui-Card__cover"></div>
+                            </div>
+                            <div class="ui-Card__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                                minima quaerat sed corrupti exercitationem sunt, quas a ex
+                                unde nobis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="ui-Card ui-Card_II">
+                        <div class="ui-Card__title ui-Card__title_jack">
+                            Lorem ipsum dolor sit.
+                        </div>
+                        <div class="ui-Card__content">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"></div>
+                            </div>
+                            <div class="ui-Card__body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                                minima quaerat sed corrupti exercitationem sunt, quas a ex
+                                unde nobis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>模板三</h3>
+            <div class="example">
+                <div class="ui-Card ui-Card_III">
+                    <div class="ui-Card__coverWrap">
+                        <div class="ui-Card__cover"></div>
+                    </div>
+                    <div class="ui-Card__title ui-Card__title_jack">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                    <div class="ui-Card__body ui-Card__body_jack">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis deleniti ad similique! Voluptas incidunt nemo hic sed
+                        reiciendis velit, laborum asperiores perferendis culpa expedita!
+                        Aliquid mollitia earum ratione quidem adipisci!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>模板四</h3>
+            <div class="example">
+                <div class="ui-Card ui-Card_IV">
+                    <div class="ui-Card__coverWrap">
+                        <div class="ui-Card__cover"></div>
+                    </div>
+                    <div class="ui-Card__content">
+                        <div class="ui-Card__title ui-Card__title_jack">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                        <!-- <div class="ui-Card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis illum eius dolorum cumque facilis explicabo magnam perferendis omnis, ipsam perspiciatis?</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>模板五</h3>
+            <div class="example">
+                <div class="ui-Card ui-Card_V">
+                    <div class="ui-Card__coverWrap">
+                        <div class="ui-Card__cover"></div>
+                    </div>
+                    <div class="ui-Card__content">
+                        <div class="ui-Card__contentInner">
+                            <div class="ui-Card__title ui-Card__title_jack">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="ui-Card__body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Saepe optio delectus cumque rerum corporis esse possimus
+                                molestiae error voluptates deleniti.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>模板六</h3>
+            <div class="example">
+                <div class="ui-Card ui-Card_VI">
+                    <div class="ui-Card__title ui-Card__title_jack">
+                        Lorem ipsum dolor sit.
+                    </div>
+                    <div class="ui-Card__content">
+                        <div class="ui-Card__body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Facilis, quis. Delectus perferendis eos, molestiae, maxime aut
+                            iusto ab labore eligendi ad harum eius, vel expedita vero quasi
+                            placeat corrupti adipisci.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>
+            信息流模板
+        </h2>
+        <div class="section">
+            <h3>FeedTemplateI</h3>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_I">
+                    <div class="ui-FeedTemplate__Col1">
+                        <div class="ui-Card ui-Card_III">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>amet sed atque</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Provident eos voluptatem dolore molestiae consequuntur aut
+                                    est aut voluptatem. Et aliquid totam commodi eos saepe alias
+                                    aperiam. Impedit id qui recusandae ut sint. Voluptates rerum
+                                    odit esse expedita cupiditate accusamus ab ut. Architecto
+                                    debitis magnam. Autem minus alias incidunt facere. Aut animi
+                                    quod autem aut quia eaque et dolorum.…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>vitae dolorem suscipit</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                        tempore occaecati ratione pariatur repellendus id
+                                        architecto. Exercitationem nemo dignissimos ad qui…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>minus sint dolorem</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et atque est…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>quae dolores dolore</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint necessitatibus est…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col2">
+                        <div class="ui-Card ui-Card_III">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/business/");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_king">
+                                <span>consectetur sit ipsa</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_king">
+                                <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                    modi explicabo molestiae. Sequi earum natus dolores dolorem
+                                    ut fugiat dolorem omnis.<br />
+                                    <br />Quae reprehenderit consectetur voluptatem esse nulla
+                                    voluptatem est autem voluptatem. Ullam est perspiciatis
+                                    nihil corrupti asperiores. Quas illo consequatur tempore
+                                    distinctio. Porro molestiae repellat est mollitia veniam non
+                                    perspiciatis.<br />
+                                    <br />Voluptatem et laborum doloribus. Numquam nam iusto
+                                    ipsam. Saepe adipisci enim consequatur amet. Dignissimos qui
+                                    autem eligendi voluptatem.</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>laboriosam aut ut</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/people");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Qui vel sapiente. Aut molestiae iusto possimus minus
+                                        laborum expedita omnis tenetur. Est totam nam iusto ea
+                                        itaque tempore vel. Accusantium exercitationem tempora rem
+                                        et. Iure consectetur et dolores magnam nemo veniam est
+                                        iure. …</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>esse corrupti et</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Quia eaque architecto accusantium earum vel sint. Commodi
+                                        totam perspiciatis quo nobis distinctio quo optio sapiente
+                                        molestiae. Doloribus quia eveniet. Sed amet aliquid sunt
+                                        est facere unde. Saepe incidunt tempora ullam voluptas.
+                                        Minima…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col3">
+                        <div class="ui-Card ui-Card_III">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/technics");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>ullam rerum qui</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Et dicta voluptas nihil quia. Dolor suscipit tenetur
+                                    laudantium est optio iure ex hic labore. Quo laboriosam
+                                    cupiditate quis. Id autem labore. Et ipsa maiores deleniti
+                                    dignissimos sed et aut. Soluta quae molestias reiciendis
+                                    sapiente et delectus nesciunt quis ipsa. Non molestiae non
+                                    saepe sed…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_III">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>cupiditate necessitatibus sequi</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Culpa sit officiis corrupti. Aperiam odio rerum et cumque
+                                    quae voluptatibus. Veritatis voluptatem nihil deserunt
+                                    voluptas voluptatem esse dolore tempora. Dolores est omnis.
+                                    Dolorum dignissimos dolorem voluptatem suscipit rem. Iste
+                                    omnis aliquam ut qui eligendi. Explicabo sit sapiente aut
+                                    molestiae…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_III" id="BkbeTX2axNf" kind="article">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>expedita eaque praesentium</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Vel et neque vel magnam est consequatur. Sed ut est quas
+                                    cum. Qui eius quae facilis voluptas ut. Eligendi hic
+                                    dignissimos earum consectetur adipisci. Aut est sapiente est
+                                    voluptatibus ipsa voluptatibus sequi. Dolores nulla
+                                    quibusdam consequatur est dolorem. Ducimus sequi dolore
+                                    dicta iure…</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>FeedTemplateIII</h3>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_III">
+                    <div class="ui-FeedTemplate__Col1">
+                        <div class="ui-Card ui-Card_III">
+                            <div class="ui-Card__title ui-Card__title_king">
+                                Amet Sed Atque
+                            </div>
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style="background-image: url('http://lorempixel.com/640/480/fashion');"></div>
+                            </div>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__body ui-Card__body_king">
+                                Provident eos voluptatem dolore molestiae consequuntur aut est
+                                aut voluptatem. Et aliquid totam commodi eos saepe alias
+                                aperiam. Impedit id qui recusandae ut sint. Voluptates rerum
+                                odit esse expedita cupiditate accusamus ab ut. Architecto
+                                debitis magnam. Autem minus alias incidunt facere. Aut animi
+                                quod autem aut quia eaque et dolorum. Quisquam magnam debitis.
+                                Cum quisquam cumque voluptatem. Nesciunt ullam dolores qui ut
+                                eum. Corporis a debitis quam reiciendis omnis voluptatum est
+                                tempora. Voluptas unde iusto est praesentium dolor totam.
+                                Consequatur nihil voluptas est beatae.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col2">
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>vitae dolorem suscipit</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                                </div>
+                                <div class="ui-Card__body">
+                                    <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                        tempore occaecati ratione pariatur repellendus id
+                                        architecto. Exercitationem nemo dignissimos ad qui
+                                        recusandae minima tempora. Quasi nulla et quis. Laborum
+                                        voluptas rerum ipsum impedit tenetur. Quo eveniet quas
+                                        quia…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title">
+                                <span>minus sint dolorem</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <div class="ui-Card__body">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et atque est reiciendis minima
+                                        esse. Cumque voluptas ea quis. Officiis voluptatem
+                                        voluptatibus voluptate ea dolor voluptate
+                                        provident.…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title">
+                                <span>quae dolores dolore</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <div class="ui-Card__body">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint necessitatibus est corrupti.
+                                        Id autem consectetur repellat ut et qui. Sit aut odit qui.
+                                        Veniam dolor voluptas neque voluptate quis nobis id.
+                                        Veritatis tempora…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>FeedTemplateV</h3>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_V">
+                    <div class="ui-FeedTemplate__Row">
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>amet sed atque</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Provident eos voluptatem dolore molestiae consequuntur
+                                        aut est aut voluptatem. Et aliquid totam commodi eos saepe
+                                        alias aperiam. Impedit id qui recusandae ut sint.
+                                        Voluptates rerum odit esse expedita cupiditate accusamus
+                                        ab ut. Architecto debitis magnam. Autem minus alias
+                                        incidunt facere. Aut animi quod autem aut quia eaque et
+                                        dolorum. Quisquam…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="H1-TmnTeNM" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                                </div>
+                                <h1 class="ui-Card__title">
+                                    <span>vitae dolorem suscipit</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                        tempore occaecati ratione pariatur repellendus id
+                                        architecto. Exercitationem nemo dignissimos ad qui
+                                        recusandae minima tempora. Quasi nulla et quis. Laborum
+                                        voluptas rerum ipsum impedit tenetur. Quo eveniet quas
+                                        quia voluptas est ut hic libero sunt. Rem repudiandae
+                                        occaecati assumenda…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="H1X67nTx4M" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <h1 class="ui-Card__title">
+                                    <span>minus sint dolorem</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et atque est reiciendis minima
+                                        esse. Cumque voluptas ea quis. Officiis voluptatem
+                                        voluptatibus voluptate ea dolor voluptate provident. Velit
+                                        corrupti laudantium assumenda. Voluptates perspiciatis
+                                        quod vel. Soluta…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="SkH6X3axVG" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <h1 class="ui-Card__title">
+                                    <span>quae dolores dolore</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint necessitatibus est corrupti.
+                                        Id autem consectetur repellat ut et qui. Sit aut odit qui.
+                                        Veniam dolor voluptas neque voluptate quis nobis id.
+                                        Veritatis tempora sint ut. Delectus nihil eos incidunt
+                                        voluptatibus in explicabo et…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="r1v6QnTxEG" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/business/");'></div>
+                                </div>
+                                <h1 class="ui-Card__title">
+                                    <span>consectetur sit ipsa</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                        modi explicabo molestiae. Sequi earum natus dolores
+                                        dolorem ut fugiat dolorem omnis. Quae reprehenderit
+                                        consectetur voluptatem esse nulla voluptatem est autem
+                                        voluptatem. Ullam est perspiciatis nihil corrupti
+                                        asperiores. Quas illo consequatur tempore distinctio.
+                                        Porro molestiae repellat est mollitia…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="SyKpXh6gVM" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/people");'></div>
+                                </div>
+                                <h1 class="ui-Card__title">
+                                    <span>laboriosam aut ut</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Qui vel sapiente. Aut molestiae iusto possimus minus
+                                        laborum expedita omnis tenetur. Est totam nam iusto ea
+                                        itaque tempore vel. Accusantium exercitationem tempora rem
+                                        et. Iure consectetur et dolores magnam nemo veniam est
+                                        iure. Voluptatem consectetur ad. Eveniet accusamus unde
+                                        placeat inventore repellat. Ducimus dolor deserunt
+                                        dignissimos…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>FeedTemplateVII</h3>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_VII">
+                    <div class="ui-FeedTemplate__Col1">
+                        <div class="ui-Card ui-Card_III" id="r16Xhpe4G" kind="article">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_king">
+                                <span>amet sed atque</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__body ui-Card__body_king">
+                                <span>Provident eos voluptatem dolore molestiae consequuntur aut
+                                    est aut voluptatem. Et aliquid totam commodi eos saepe alias
+                                    aperiam. Impedit id qui recusandae ut sint. Voluptates rerum
+                                    odit esse expedita cupiditate accusamus ab ut.<br />
+                                    <br />Architecto debitis magnam. Autem minus alias incidunt
+                                    facere. Aut animi quod autem aut quia eaque et dolorum.
+                                    Quisquam magnam debitis.<br />
+                                    <br />Cum quisquam cumque voluptatem. Nesciunt ullam dolores
+                                    qui ut eum. Corporis a debitis quam reiciendis omnis
+                                    voluptatum est tempora. Voluptas unde iusto est praesentium
+                                    dolor totam. Consequatur nihil voluptas est beatae.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col2">
+                        <div class="ui-FeedTemplate__Row">
+                            <div class="ui-FeedTemplate__item">
+                                <div class="ui-Card ui-Card_III">
+                                    <div class="ui-Card__coverWrap">
+                                        <div class="ui-Card__cover"
+                                            style='background-image: url("http://lorempixel.com/640/480/nightlife");'>
+                                        </div>
+                                    </div>
+                                    <h1 class="ui-Card__title ui-Card__title_jack">
+                                        <span>vitae dolorem suscipit</span>
+                                    </h1>
+                                    <div class="ui-Card__avatarWrap"></div>
+                                    <div class="ui-Card__body ui-Card__body_jack">
+                                        <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                            tempore occaecati ratione pariatur repellendus id
+                                            architecto. Exercitationem nemo dignissimos ad qui
+                                            recusandae minima tempora. Quasi nulla et quis. Laborum
+                                            voluptas rerum ipsum impedit tenetur.…</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-FeedTemplate__item">
+                                <div class="ui-Card ui-Card_III">
+                                    <div class="ui-Card__coverWrap">
+                                        <div class="ui-Card__cover"
+                                            style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                    </div>
+                                    <h1 class="ui-Card__title ui-Card__title_jack">
+                                        <span>minus sint dolorem</span>
+                                    </h1>
+                                    <div class="ui-Card__avatarWrap"></div>
+                                    <div class="ui-Card__body ui-Card__body_jack">
+                                        <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                            Odit occaecati accusantium omnis est exercitationem eos
+                                            rerum. Quidem recusandae et atque est reiciendis minima
+                                            esse. Cumque voluptas ea quis. Officiis voluptatem
+                                            voluptatibus voluptate…</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-FeedTemplate__item">
+                                <div class="ui-Card ui-Card_III" id="SkH6X3axVG" kind="article">
+                                    <div class="ui-Card__coverWrap">
+                                        <div class="ui-Card__cover"
+                                            style='background-image: url("http://lorempixel.com/640/480/abstract");'>
+                                        </div>
+                                    </div>
+                                    <h1 class="ui-Card__title ui-Card__title_jack">
+                                        <span>quae dolores dolore</span>
+                                    </h1>
+                                    <div class="ui-Card__avatarWrap"></div>
+                                    <div class="ui-Card__body ui-Card__body_jack">
+                                        <span>Excepturi et perferendis nesciunt eum est error. Eos
+                                            eos enim. Voluptatem cumque doloremque hic vitae.
+                                            Quaerat praesentium nulla quam sint necessitatibus est
+                                            corrupti. Id autem consectetur repellat ut et qui. Sit
+                                            aut odit qui. Veniam dolor voluptas neque…</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-FeedTemplate__item">
+                                <div class="ui-Card ui-Card_III">
+                                    <div class="ui-Card__coverWrap">
+                                        <div class="ui-Card__cover"
+                                            style='background-image: url("http://lorempixel.com/640/480/business/");'>
+                                        </div>
+                                    </div>
+                                    <h1 class="ui-Card__title ui-Card__title_jack">
+                                        <span>consectetur sit ipsa</span>
+                                    </h1>
+                                    <div class="ui-Card__avatarWrap"></div>
+                                    <div class="ui-Card__body ui-Card__body_jack">
+                                        <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                            modi explicabo molestiae. Sequi earum natus dolores
+                                            dolorem ut fugiat dolorem omnis. Quae reprehenderit
+                                            consectetur voluptatem esse nulla voluptatem est autem
+                                            voluptatem. Ullam est…</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>FeedTemplateVIII</h2>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_VIII">
+                    <div class="ui-FeedTemplate__Row">
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="r16Xhpe4G" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>amet sed atque</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Provident eos voluptatem dolore molestiae consequuntur
+                                        aut est aut voluptatem. Et aliquid totam commodi eos saepe
+                                        alias aperiam. Impedit id qui recusandae ut sint.
+                                        Voluptates rerum odit esse expedita cupiditate accusamus
+                                        ab ut. Architecto…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="H1-TmnTeNM" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>vitae dolorem suscipit</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                        tempore occaecati ratione pariatur repellendus id
+                                        architecto. Exercitationem nemo dignissimos ad qui
+                                        recusandae minima tempora. Quasi nulla et quis. Laborum
+                                        voluptas rerum ipsum impedit tenetur. Quo…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="H1X67nTx4M" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>minus sint dolorem</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et atque est reiciendis minima
+                                        esse. Cumque voluptas ea quis. Officiis voluptatem
+                                        voluptatibus voluptate ea…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="SkH6X3axVG" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>quae dolores dolore</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint necessitatibus est corrupti.
+                                        Id autem consectetur repellat ut et qui. Sit aut odit qui.
+                                        Veniam dolor voluptas neque voluptate…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="r1v6QnTxEG" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/business/");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>consectetur sit ipsa</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                        modi explicabo molestiae. Sequi earum natus dolores
+                                        dolorem ut fugiat dolorem omnis. Quae reprehenderit
+                                        consectetur voluptatem esse nulla voluptatem est autem
+                                        voluptatem. Ullam est perspiciatis nihil…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="SyKpXh6gVM" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/people");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>laboriosam aut ut</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Qui vel sapiente. Aut molestiae iusto possimus minus
+                                        laborum expedita omnis tenetur. Est totam nam iusto ea
+                                        itaque tempore vel. Accusantium exercitationem tempora rem
+                                        et. Iure consectetur et dolores magnam nemo veniam est
+                                        iure. Voluptatem consectetur ad.…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="SyjT73pgNM" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>esse corrupti et</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Quia eaque architecto accusantium earum vel sint. Commodi
+                                        totam perspiciatis quo nobis distinctio quo optio sapiente
+                                        molestiae. Doloribus quia eveniet. Sed amet aliquid sunt
+                                        est facere unde. Saepe incidunt tempora ullam voluptas.
+                                        Minima praesentium…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_III" id="rJpamhpx4z" kind="article">
+                                <div class="ui-Card__coverWrap">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/technics");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>ullam rerum qui</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Et dicta voluptas nihil quia. Dolor suscipit tenetur
+                                        laudantium est optio iure ex hic labore. Quo laboriosam
+                                        cupiditate quis. Id autem labore. Et ipsa maiores deleniti
+                                        dignissimos sed et aut. Soluta quae molestias reiciendis
+                                        sapiente et delectus nesciunt quis ipsa.…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>FeedTemplateX</h2>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_X">
+                    <div class="ui-FeedTemplate__Col1">
+                        <div class="ui-Card ui-Card_III" id="r16Xhpe4G" kind="article">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>amet sed atque</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Provident eos voluptatem dolore molestiae consequuntur aut
+                                    est aut voluptatem. Et aliquid totam commodi eos saepe alias
+                                    aperiam. Impedit id qui recusandae ut sint. Voluptates rerum
+                                    odit esse expedita cupiditate accusamus ab ut. Architecto
+                                    debitis magnam. Autem minus alias incidunt facere. Aut animi
+                                    quod autem aut quia eaque et dolorum.…</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col2">
+                        <div class="ui-Card ui-Card_III" id="H1-TmnTeNM" kind="article">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>vitae dolorem suscipit</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                    tempore occaecati ratione pariatur repellendus id
+                                    architecto. Exercitationem nemo dignissimos ad qui
+                                    recusandae minima tempora. Quasi nulla et quis. Laborum
+                                    voluptas rerum ipsum impedit tenetur. Quo eveniet quas quia
+                                    voluptas est ut hic libero sunt. Rem repudiandae
+                                    occaecati…</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col3">
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>minus sint dolorem</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et atque est reiciendis minima
+                                        esse. Cumque voluptas ea quis. Officiis voluptatem
+                                        voluptatibus voluptate ea dolor voluptate
+                                        provident.…</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_II">
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>quae dolores dolore</span>
+                            </h1>
+                            <div class="ui-Card__avatarWrap"></div>
+                            <div class="ui-Card__content">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint necessitatibus est corrupti.
+                                        Id autem consectetur repellat ut et qui. Sit aut odit qui.
+                                        Veniam dolor voluptas neque voluptate quis nobis id.
+                                        Veritatis tempora…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>FeedTemplateXI</h2>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_XI">
+                    <div class="ui-Card ui-Card_V">
+                        <div class="ui-Card__coverWrap">
+                            <div class="ui-Card__cover"
+                                style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                        </div>
+                        <div class="ui-Card__content">
+                            <div>
+                                <h1 class="ui-Card__title ui-Card__title_king">
+                                    <span>amet sed atque</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Provident eos voluptatem dolore molestiae consequuntur
+                                        aut est aut voluptatem. Et aliquid totam commodi eos saepe
+                                        alias aperiam. Impedit id qui recusandae ut sint.
+                                        Voluptates…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Row">
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>vitae dolorem suscipit</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body">
+                                    <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                        tempore occaecati ratione pariatur repellendus id
+                                        architecto. Exercitationem nemo dignissimos…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>minus sint dolorem</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut.
+                                        Odit occaecati accusantium omnis est exercitationem eos
+                                        rerum. Quidem recusandae et…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>quae dolores dolore</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                        enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                        praesentium nulla quam sint…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/business/");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>consectetur sit ipsa</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                        modi explicabo molestiae. Sequi earum natus dolores
+                                        dolorem ut fugiat dolorem omnis. Quae…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/people");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>laboriosam aut ut</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Qui vel sapiente. Aut molestiae iusto possimus minus
+                                        laborum expedita omnis tenetur. Est totam nam iusto ea
+                                        itaque tempore vel. Accusantium…</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui-FeedTemplate__item">
+                            <div class="ui-Card ui-Card_I">
+                                <div class="ui-Card__coverWrap ui-Card__coverWrap_left">
+                                    <div class="ui-Card__cover"
+                                        style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                                </div>
+                                <h1 class="ui-Card__title ui-Card__title_jack">
+                                    <span>esse corrupti et</span>
+                                </h1>
+                                <div class="ui-Card__avatarWrap"></div>
+                                <div class="ui-Card__body ui-Card__body_jack">
+                                    <span>Quia eaque architecto accusantium earum vel sint. Commodi
+                                        totam perspiciatis quo nobis distinctio quo optio sapiente
+                                        molestiae. Doloribus quia eveniet. Sed…</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>FeedTemplateXII</h2>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_XII">
+                    <div class="ui-FeedTemplate__Col1">
+                        <div class="ui-Card ui-Card_V">
+                            <div class="ui-Card__coverWrap">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                            </div>
+                            <div class="ui-Card__content">
+                                <div>
+                                    <h1 class="ui-Card__title ui-Card__title_queen">
+                                        <span>amet sed atque</span>
+                                    </h1>
+                                    <div class="ui-Card__avatar"></div>
+                                    <div class="ui-Card__body ui-Card__body_jack">
+                                        <span>Provident eos voluptatem dolore molestiae consequuntur
+                                            aut est aut voluptatem. Et aliquid totam commodi eos
+                                            saepe alias aperiam. Impedit id qui recusandae ut sint.
+                                            Voluptates rerum odit esse expedita cupiditate accusamus
+                                            ab ut. Architecto debitis magnam. Autem minus alias
+                                            incidunt facere. Aut animi quod autem aut quia eaque et
+                                            dolorum. Quisquam magnam debitis. Cum quisquam cumque
+                                            voluptatem. Nesciunt ullam dolores qui ut eum. Corporis
+                                            a debitis quam reiciendis omnis voluptatum est…</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/nightlife");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>vitae dolorem suscipit</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Maiores nihil quidem velit ipsam. Exercitationem rem in
+                                    tempore occaecati ratione pariatur repellendus id
+                                    architecto. Exercitationem nemo dignissimos ad qui
+                                    recusandae minima tempora. Quasi nulla et quis. Laborum
+                                    voluptas rerum ipsum impedit tenetur. Quo eveniet quas quia
+                                    voluptas est ut hic libero sunt. Rem repudiandae occaecati
+                                    assumenda et. Officiis et corporis. Aut quo vel…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/city");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>minus sint dolorem</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Maxime sunt quod a cum. Amet aliquid voluptas ad aut. Odit
+                                    occaecati accusantium omnis est exercitationem eos rerum.
+                                    Quidem recusandae et atque est reiciendis minima esse.
+                                    Cumque voluptas ea quis. Officiis voluptatem voluptatibus
+                                    voluptate ea dolor voluptate provident. Velit corrupti
+                                    laudantium assumenda. Voluptates perspiciatis quod vel.
+                                    Soluta tempore totam provident…</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-FeedTemplate__Col2">
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>quae dolores dolore</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Excepturi et perferendis nesciunt eum est error. Eos eos
+                                    enim. Voluptatem cumque doloremque hic vitae. Quaerat
+                                    praesentium nulla quam sint necessitatibus est corrupti. Id
+                                    autem consectetur repellat ut et qui. Sit aut odit qui.
+                                    Veniam dolor voluptas neque voluptate quis nobis id.
+                                    Veritatis tempora sint ut. Delectus nihil eos incidunt
+                                    voluptatibus in explicabo et vero possimus. …</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/business/");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>consectetur sit ipsa</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Error repellat tenetur quaerat optio et quos. Sunt ipsa
+                                    modi explicabo molestiae. Sequi earum natus dolores dolorem
+                                    ut fugiat dolorem omnis. Quae reprehenderit consectetur
+                                    voluptatem esse nulla voluptatem est autem voluptatem. Ullam
+                                    est perspiciatis nihil corrupti asperiores. Quas illo
+                                    consequatur tempore distinctio. Porro molestiae repellat est
+                                    mollitia veniam non perspiciatis. Voluptatem et…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/people");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>laboriosam aut ut</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Qui vel sapiente. Aut molestiae iusto possimus minus
+                                    laborum expedita omnis tenetur. Est totam nam iusto ea
+                                    itaque tempore vel. Accusantium exercitationem tempora rem
+                                    et. Iure consectetur et dolores magnam nemo veniam est iure.
+                                    Voluptatem consectetur ad. Eveniet accusamus unde placeat
+                                    inventore repellat. Ducimus dolor deserunt dignissimos odit
+                                    corrupti. Harum quam est et. Rerum…</span>
+                            </div>
+                        </div>
+                        <div class="ui-Card ui-Card_I">
+                            <div class="ui-Card__coverWrap ui-Card__coverWrap_right">
+                                <div class="ui-Card__cover"
+                                    style='background-image: url("http://lorempixel.com/640/480/abstract");'></div>
+                            </div>
+                            <h1 class="ui-Card__title ui-Card__title_jack">
+                                <span>esse corrupti et</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__body_jack">
+                                <span>Quia eaque architecto accusantium earum vel sint. Commodi
+                                    totam perspiciatis quo nobis distinctio quo optio sapiente
+                                    molestiae. Doloribus quia eveniet. Sed amet aliquid sunt est
+                                    facere unde. Saepe incidunt tempora ullam voluptas. Minima
+                                    praesentium voluptatem et et nihil. Sed repellendus neque
+                                    molestias veniam sit labore quod debitis. Facere consectetur
+                                    voluptates molestias est…</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>FeedTemplateXIII</h2>
+            <div>
+                <div class="ui-FeedTemplate ui-FeedTemplate_XIII">
+                    <div class="ui-Card ui-Card_IV">
+                        <div class="ui-Card__coverWrap">
+                            <div class="ui-Card__cover"
+                                style='background-image: url("http://lorempixel.com/640/480/fashion");'></div>
+                        </div>
+                        <div class="ui-Card__content">
+                            <h1 class="ui-Card__title ui-Card__title_queen">
+                                <span>amet sed atque</span>
+                            </h1>
+                            <div class="ui-Card__avatar"></div>
+                            <div class="ui-Card__body ui-Card__jack">
+                                <span>Provident eos voluptatem dolore molestiae consequuntur aut
+                                    est aut voluptatem. Et aliquid totam commodi eos saepe alias
+                                    aperiam. Impedit id qui recusandae ut sint. Voluptates rerum
+                                    odit esse expedita cupiditate accusamus ab ut. Architecto
+                                    debitis magnam. Autem minus alias incidunt facere. Aut animi
+                                    quod autem aut quia eaque et dolorum. Quisquam magnam
+                                    debitis. …</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

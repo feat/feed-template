@@ -1,0 +1,249 @@
+@include block(ns(FeedTemplate)) {
+  @include block(ns(Card)) {
+    margin-bottom: $feed-template-gap-base - .5em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &:hover {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  @include modifier(I) {
+    display: flex;
+    margin-left: -$feed-template-gap-base;
+    margin-right: -$feed-template-gap-base;
+    
+    %templateI_column {
+      padding-left: $feed-template-gap-base - .5em;
+      padding-right: $feed-template-gap-base - .5em;
+      flex-shrink: 1;
+      flex-grow: 0;
+      min-width: 0;
+    }
+
+    @include element(Col1, true) {
+      @extend %templateI_column;
+      flex-basis: percentage(8 / 24);
+    }
+
+    @include element(Col2, true) {
+      @extend %templateI_column;
+      flex-basis: percentage(10 / 24);
+    }
+    @include element(Col3, true) {
+      @extend %templateI_column;
+      flex-basis: percentage(6 / 24);
+    }
+  }
+
+  @include modifier(III) {
+    display: flex;
+    margin-left: -$feed-template-gap-base;
+    margin-right: -$feed-template-gap-base;
+    %templateIII_column {
+        padding-left: $feed-template-gap-base - .5em;
+        padding-right: $feed-template-gap-base - .5em;
+        flex-shrink: 1;
+        flex-grow: 0;
+        min-width: 0;
+    }
+    @include element(Col1, true) {
+        @extend %templateIII_column;
+        flex-basis: percentage(16/24);
+      }
+      @include element(Col2, true) {
+        @extend %templateIII_column;
+        flex-basis: percentage(8/24);
+      }
+  }
+
+  @include modifier(V) {
+    margin-left: -$feed-template-gap-base + .5em;
+    margin-right: -$feed-template-gap-base + .5em;
+    @include element(Row, true) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include element(item, true) {
+      margin-bottom: 1.5em;
+      flex-basis: percentage(8 / 24);
+      // padding-left: $feed-template-gap-base + .5em;
+      // padding-right: $feed-template-gap-base + .5em;
+    }
+    @include block(ns(Card)) {
+      height: 100%;
+    }
+  }
+
+  @include modifier(VII) {
+    display: flex;
+    margin-left: -$feed-template-gap-base;
+    margin-right: -$feed-template-gap-base;
+
+    @include block(ns(Card)) {
+      height: 100%;
+    }
+
+    %templateVII_column {
+        padding-left: $feed-template-gap-base - .5em;
+        padding-right: $feed-template-gap-base - .5em;
+        flex-shrink: 1;
+        flex-grow: 0;
+        min-width: 0;
+        flex-basis: 50%;
+    }
+    @include element(Col1, true) {
+        @extend %templateVII_column;
+    }
+    
+    @include element(Col2, true) {
+        @extend %templateVII_column;
+        @include element(Row, true) {
+          margin-left: -$feed-template-gap-base + .5em;
+          margin-right: -$feed-template-gap-base + .5em;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        @include element(item, true) {
+          flex-basis: 50%;
+          padding-left: $feed-template-gap-base - .5em;
+          padding-right: $feed-template-gap-base - .5em;
+          box-sizing: border-box;
+        }
+    }
+  }
+
+  @include modifier(VIII) {
+    margin-left: -$feed-template-gap-base + .5em;
+    margin-right: -$feed-template-gap-base + .5em;
+    @include element(Row, true) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include element(item, true) {
+        flex-basis: 25%;
+        padding-left: $feed-template-gap-base - 1em;
+        padding-right: $feed-template-gap-base - 1em;
+        box-sizing: border-box;
+        margin-bottom: .5em;
+    }
+    @include block(ns(Card)) {
+      height: 100%;
+    }
+  }
+
+  @include modifier(IX) {
+    display: flex;
+    margin-left: -$feed-template-gap-base;
+    margin-right: -$feed-template-gap-base;
+
+    %templateIX_column {
+        padding-left: $feed-template-gap-base - .5em;
+        padding-right: $feed-template-gap-base - .5em;
+        flex-shrink: 1;
+        flex-grow: 0;
+        min-width: 0;
+    }
+    @include element(Col1, true) {
+        @extend %templateIX_column;
+        flex-basis: percentage(14/24);
+        display: flex;
+        flex-direction: column;
+    }
+    @include element(Col2, true) {
+        @extend %templateIX_column;
+        flex-basis: percentage(10/24);
+    }
+  }
+
+  @include modifier(X) {
+    display: flex;
+    margin-left: -$feed-template-gap-base;
+    margin-right: -$feed-template-gap-base;
+    %templateX_column {
+        padding-left: $feed-template-gap-base - .5em;
+        padding-right: $feed-template-gap-base - .5em;
+        flex-shrink: 1;
+        flex-grow: 0;
+        min-width: 0;
+        flex-basis: percentage(1/3);
+       
+      }
+      @include element(Col1, true) {
+        @extend %templateX_column;
+        @include block(ns(Card)) {
+          height: 100%;
+        }
+      }
+      @include element(Col2, true) {
+        @extend %templateX_column;
+        @include block(ns(Card)) {
+          height: 100%;
+        }
+      }
+      @include element(Col3, true) {
+        @extend %templateX_column;
+      }
+  }
+
+  @include modifier(XI) {
+    margin-left: -.5em;
+    margin-right: -.5em;
+    @include element(Row, true) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include element(item, true) {
+        flex-grow: 0;
+        flex-basis: 50%;
+        min-width: 0;
+        flex-shrink: 0;
+        margin-bottom: px-to-rem(24);
+    }
+
+    @include block(ns(Card)) {
+      height: 100%;
+      @include modifier(V) {
+        @include element(cover, true) {
+          padding-top: percentage(8 / 24);
+        }
+      }
+    }
+  }
+
+  @include modifier(XII) {
+    display: flex;
+    margin-left: -$feed-template-gap-base + .5em;
+    margin-right: -$feed-template-gap-base + .5em;
+
+    %templateXII_column {
+        flex-shrink: 1;
+        flex-grow: 0;
+        min-width: 0;
+        flex-basis: 50%;
+    }
+
+    @include element(Col1, true) {
+        @extend %templateXII_column;
+        padding-right: ($feed-template-gap-base - .5em) / 2;
+      }
+      @include element(Col2, true) {
+        @extend %templateXII_column;
+        padding-left: ($feed-template-gap-base - .5em) / 2;
+      }
+
+      @include block(ns(Card)) {
+        @include modifier(V) {
+          @include element(cover, true) {
+            padding-top: percentage(12 / 16);
+          }
+        }
+      }
+  }
+
+  @include modifier(XIII) {
+    margin-left: -$feed-template-gap-base + .5em;
+    margin-right: -$feed-template-gap-base + .5em;
+  }
+}

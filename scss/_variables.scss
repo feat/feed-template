@@ -1,0 +1,22 @@
+$card-line-height: 1.2 !default;
+
+$card-title-font: serif !default;
+$card-text-font: sans-serif !default;
+
+$card-base-font-size: 16px !default;
+$card-base-line-height: 1.25 !default;
+$card-title-line-height: 1.1 !default;
+$card-bg-color: white !default;
+$card-cover-bg-color: #f3f3f3 !default;
+$card-cover-darker-bg-color: #bbbbbb !default;
+$card-text-shadow-color: rgba(128, 128, 128, 0.2) !default;
+
+$card-title-king-size: 3.5em !default;  // 56px;
+$card-title-queen-size: 2.25em !default; // 36px;
+$card-title-jack-size: 1.5em !default; // 24px;
+
+$card-text-king-size: 1.3125em !default; // 21px;
+$card-text-queen-size: 1.125em !default; // 18px;
+$card-text-jack-size: 1em !default;  // 16px;
+
+$feed-template-gap-base: 1.125em !default;

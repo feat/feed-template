@@ -1,0 +1,150 @@
+@include block(ns(Card)) {
+  padding: .5em;
+  font-family: $card-text-font;
+  font-size: $card-base-font-size;
+  line-height: $card-base-line-height;
+  background-color: $card-bg-color;
+  transition: box-shadow 0.3s;
+  zoom: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    // position: relative;
+    // z-index: 1;
+  }
+
+  @include element(title) {
+    font-family: $card-title-font;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+    line-height: $card-title-line-height;
+    overflow: hidden;
+
+    @include modifier(king) {
+      font-size: $card-title-king-size;
+    }
+    @include modifier(queen) {
+      font-size: $card-title-queen-size;
+    }
+    @include modifier(jack) {
+      font-size: $card-title-jack-size;
+    }
+  }
+
+  @include element(authorInfo) {
+    display: flex;
+    margin-bottom: .75em;
+    zoom: 1;
+    overflow: hidden;
+  }
+
+  @include element(cover) {
+    width: 100%;
+    padding-top: percentage(9 / 16);
+    background-color: $card-cover-bg-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include element(body) {
+    @include modifier(king) {
+        font-size: $card-text-king-size;
+    }
+    @include modifier(queen) {
+        font-size: $card-text-queen-size;
+    }
+    @include modifier(jack) {
+        font-size: $card-text-jack-size;
+    }
+  }
+
+  // template related
+  @include modifier(I) {
+    @include element(coverWrap, true) {
+      width: 50%;
+      @include modifier(left) {
+        float: left;
+        margin-right: 1em;
+      }
+      @include modifier(right) {
+        float: right;
+        margin-left: 1em;
+      }
+    }
+    @include element(title, true) {
+      margin-top: .25em;
+    }
+  }
+
+  @include modifier(II) {
+    @include element(title, true) {
+      margin-top: .25em;
+    }
+    @include element(coverWrap, true) {
+      width: 45%;
+      @include modifier(left) {
+        float: left;
+        margin-right: .5em;
+      }
+      @include modifier(right) {
+        float: right;
+        margin-left: .5em;
+      }
+    }
+  }
+
+  @include modifier(III) {
+    @include element(body, true) {
+      margin-top: .5em;
+    }
+  }
+
+  @include modifier(IV) {
+    display: flex;
+    @include element(coverWrap, true) {
+      flex-basis: percentage(15 / 24);
+    }
+    @include element(content, true) {
+      flex-basis: percentage(9 / 24);
+      padding-left: 1.5em;
+      box-sizing: border-box;
+    }
+  }
+
+  @include modifier(V) {
+    position: relative;
+    padding-bottom: .75em;
+    color: white;
+    text-shadow: 2px 2px 4px $card-text-shadow-color;
+    @include element(title, true) {
+      margin-top: 0;
+    }
+    @include element(coverWrap, true) {
+      width: 100%;
+    }
+    @include element(cover, true) {
+      background-color: $card-cover-darker-bg-color;
+    }
+    @include element(content, true) {
+      padding: 2em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  }
+  @include modifier(VI) {
+    padding: .7em;
+    @include element(content, true) {
+      display: flex;
+    }
+  }
+}
